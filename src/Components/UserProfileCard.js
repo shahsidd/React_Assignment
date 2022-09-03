@@ -45,7 +45,7 @@ function UserProfileCard({ userDetails }) {
 
     function RenderCard({ user, index }) {
         return (
-            <Card sx={{ maxWidth: 345 }} key={index} onClick={() => openUserDetails(user)}>
+            <Card sx={{ maxWidth: 345 }} key={index} onClick={() => openUserDetails(user)} className='eachCard'>
                 <CardContent className='userCardContent'>
                     <Typography className="userName">
                         {Object.values(user.name).join(' ')}
