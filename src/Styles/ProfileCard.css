@@ -7,7 +7,9 @@
 }
 
 .leftSide {
-    width: 45%
+    width: 45%;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
 }
 
 .rightSide {
@@ -20,6 +22,7 @@
     margin: 10px;
     box-shadow: 2px 2px 2px 2px lightgray;
     cursor: pointer;
+    background-color: beige;
 }
 
 .userCardContent {

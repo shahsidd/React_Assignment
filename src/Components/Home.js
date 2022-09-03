@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { randomUserApiUrl } from '../Configuration/Config'
-import { Button, Snack, Alert } from '@mui/material';
+import { Button } from '@mui/material';
 import UserProfileCard from './UserProfileCard'
 import '../Styles/Home.css';
 import AddIcon from '@mui/icons-material/Add';
@@ -25,13 +25,6 @@ function Home() {
                 <Button variant="contained" color="error" onClick={deleteAllUsers}>Delete All Users</Button>
             </div>
             <UserProfileCard userDetails={userDetails} />
-
-            {/*User notification on new user added*/}
-            {/* <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-                <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-                    This is a success message!
-                </Alert>
-            </Snackbar> */}
         </div>
     )
 }

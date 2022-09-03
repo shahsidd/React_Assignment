@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
 import '../Styles/ProfileCard.css';
 
 function UserProfileCard({ userDetails }) {
@@ -15,7 +15,7 @@ function UserProfileCard({ userDetails }) {
     }, [userDetails])
 
     useEffect(() => {
-        localStorage.setItem('AllUsers', JSON.stringify(allUserList))
+        localStorage.setItem('AllUsers', JSON.stringify(allUserList))   //Set localstorage and user list in sync
     }, [allUserList])
 
     return (
@@ -43,6 +43,7 @@ function UserProfileCard({ userDetails }) {
         </div>
     );
 
+    //Rendering for each card
     function RenderCard({ user, index }) {
         return (
             <Card sx={{ maxWidth: 345 }} key={index} onClick={() => openUserDetails(user)} className='eachCard'>
@@ -55,17 +56,15 @@ function UserProfileCard({ userDetails }) {
                     </Typography>
                 </CardContent>
                 <div className='parentDivUserImg'>
-                    <CardMedia
-                        component="img"
-                        image={user.picture.medium}
-                        alt={`${user.name.first} ${user.name.last}`}
-                        className='userImg'
+                    <CardMedia component="img" image={user.picture.medium}
+                        className='userImg' alt={`${user.name.first} ${user.name.last}`}
                     />
                 </div>
             </Card>
         )
     }
 
+    //Set data for selected user
     function openUserDetails(userObjData) {
         setSelectedUser(userObjData)
     }
