@@ -1,0 +1,54 @@
+.mainCardWrapper {
+    /* width: 30%; */
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.leftSide {
+    width: 45%
+}
+
+.rightSide {
+    width: 55%;
+}
+
+.leftSide .css-1ri6ub7-MuiPaper-root-MuiCard-root {
+    max-width: 100%;
+    display: flex;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    cursor: pointer;
+}
+
+.userCardContent {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftSide .css-o69gx8-MuiCardMedia-root {
+    width: 75px;
+    height: 75px;
+}
+
+.parentDivUserImg {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    width: 30%;
+}
+
+.userCardContent .userName {
+    font-size: 1.6rem;
+}
+
+.userCardContent .userEmail {
+    font-size: 1rem;
+}
+
+.rightSide p {
+    font-size: 1.2rem;
+    margin: 2px
+}
