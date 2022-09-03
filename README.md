@@ -1,6 +1,7 @@
-#Packages Used.
-axios => for api call
-mui => for styled components/UI
+# Packages Used.
+axios => for api call.
+
+mui => for styled components/UI.
 
 # Getting Started with Create React App
 
