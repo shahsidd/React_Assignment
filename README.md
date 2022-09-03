@@ -1,4 +1,4 @@
-##Packages Used
+#Packages Used.
 axios => for api call
 mui => for styled components/UI
 
